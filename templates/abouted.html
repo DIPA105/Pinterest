@@ -1,0 +1,95 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+          
+    <style>
+        body {margin:0;
+        font-size: 20px;}
+        
+        .topnav {
+          overflow: hidden;
+          background-color:white;
+        }
+        
+        .topnav a {
+          float: right;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration:none;
+          font-size: 17px;
+          border-bottom: 3px solid transparent;
+          font-weight: bolder;
+        }
+        
+        .topnav a:hover {
+          border-bottom: 3px solid red;
+        }
+        
+        .topnav a.active {
+          border-bottom: 3px solid red;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="topnav">
+          <a class="active" href="#">Investor relations</a>
+          <a href="#"> Produts</a>
+          <a href="#">Gallery</a>
+          <a href="#contact">Company</a>
+          <a href="#contact"> Pinsights</a>
+          <a href="#contact">News </a>
+          <img src="{% static '/images/pinter.jpg' %}" height="50px" width="auto">
+              </div>
+              <div class="row ">
+                <div class="col-12"style="border: 2px solid;padding:20px;margin:10px 10px 10px 10px;height:150px;width:auto;background-color:gray;">
+                    <!-- <h3 img src="{% static '/images/pinter.jpg' %}" height="50px" width="auto"color="red" >Newsroom</h3> -->
+                    <h1 style="text-align: left;color:white;">Newsroom</h1>
+                    </div> 
+                    <center>
+                    <img src="{% static '/images/pint.jpg' %}" height="400px" width="500px"  >
+                    </center> 
+                    <div>
+                    <h3>
+
+                    This year, I planned my home renovation on Pinterest six months before we even called the contractor. I helped my daughter to pick her Hallowe'en costume in July. Now, I’m saving outfits for a capsule wardrobe months before coming out of quarantine. 
+                    
+                    When it comes to making plans on Pinterest, I’m in good company. Today, more than 400 million people around the world use Pinterest to find tomorrow’s ideas. It’s a place to look forwards. This means that we know what's next. In fact, 8 out of 10 of our predictions for 2020 came true – despite it being the least predictable year in history.
+                    
+                    That’s why I’m so excited to bring you this year’s Pinterest Predicts report, featuring 150+ trends that we expect to rise in 2021. This is not your typical year-end trend report. This is a not-yet-trending report. It's a window into the future from the platform where people go to plan it. From athflow and Japandi to skinimalism and vibey lights, if you haven’t heard of these trends before, well, that’s the whole point.</h3>
+                  </div> 
+                </center>
+                <img src="{% static '/images/pin.jpg' %}" height="40px" width="auto" >
+                <center>
+                
+                  <link rel="stylesheet" type="text/css" href="{% static  '/styles/about.css' %}"> 
+                  <label for="ice-cream-choice">Choose a Language:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+  <option value="English">
+  <option value="English UK">
+  <option value="Dansk">
+  <option value="Cesky">
+  <option value="Hindi">
+  <option value="Suomi">
+  <option value="Romana">
+  <option value="Svenska">
+  <option value="Tagalog"></option>
+</option>
+</datalist>
+</center>
+<h3>About Us</h3>
+<p href="#"> what is pinterest?</p>
+<p href="#">Our pinterest logo</p>
+<p href="#contact">Engineering blog</p>
+<p href="#">Brand guidelines</p>
+<p class ="active" href="#">Careers</p>
+</body>
+</html>

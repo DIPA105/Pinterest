@@ -1,0 +1,162 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <img src="pin.jpg"  height="10px"  width="10px"  >  
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script> 
+     </head>
+    <style>
+        
+        body {margin:0;
+       
+      }
+        
+        .topnav {
+          overflow: hidden;
+          background-color:white;
+        }
+        
+        .topnav a {
+          float:left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration:none;
+          font-size: 18px;
+          font-style:normal;
+          border-bottom: 3px solid transparent;
+          font-weight: bolder;
+        }
+        
+        .topnav a:hover {
+          border-bottom: 3px solid red;
+        }
+        
+        .topnav a.active {
+          border-bottom: 3px solid red;
+        }
+        </style>
+        </head>
+        <body>
+            
+        <div class="topnav">
+       
+      <a class="active" href="indexpage">Today</a> 
+      {% if user.is_authenticated %}
+       <a href="photo">Hello {{user.first_name}}</a>
+        <a href="logout">Log Out</a>
+      {% endif %}
+      
+      
+      
+      
+      
+        
+    <link rel="stylesheet" href="{% static '/styles/search1.css' %} ">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Type to search..">
+        <div class="autocom-box">
+            <li>Home decoration idea</li>
+            <li>Dya idea</li>
+            <li>Outfit idea</li>
+            <li>Chai idea </li>
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+
+    <script src="{% static '/js/search1.js' %}"></script> 
+    <script src="{% static '/js/search2.js' %}"></script> 
+            </div>
+   <link rel="stylesheet" href="{% static '/styles/search.css' %}">
+<body>
+  
+  <div class="container">
+    <div class="image">
+     <h1>Outfit idea</h1>
+     
+     
+    <img src="{% static '/images/outfit.jpg' %}" class="img-thumbnail"> 
+    <div class="desc">"There are distinct indications that a similar outfit was fairly common in Ine's time, and that its value was much the same"</div>
+    <a href="{% static '/images/outfit.jpg' %}" class="img-thumbnail" download>Download<span></span> </a> 
+    <!-- <link rel="stylesheet" href="{% static '/styles/save1.css' %}">
+    <script>
+        let button = document.querySelector("body a");
+        button.addEventListener("click",()=>{const span = document.querySelector("a span");
+        button.style.paddingRight = '10px';
+        span.style.visibility = "visible";
+        selfTimeout(() =>{
+            span.style.visibility="hidden;";
+            button.style.transition=".3s easein-out"; 
+            button.style.paddingRight="0px";
+        },3000);
+        })
+    </script>     -->
+  </div>
+  <div class="image">
+    <h1>chai idea</h1>
+    <img src="{% static '/images/tea13.jpg' %}"class="img-thumbnail">
+    <div class="desc">"In May, 1892, Helen gave a tea in aid of the kindergarten for the blind"</div>
+    <a href="{% static '/images/tea13.jpg' %}" class="img-thumbnail" download>Download<span></span> </a>
+  </div>
+  <div class="image">
+    <h1>Home decoration</h1>
+    <img src="{% static '/images/home4.jpg' %}"class="img-thumbnail">
+    <div class="desc">"This was one of their first lessons at home and at school"</div>
+    <a href="{% static '/images/home4.jpg' %}" class="img-thumbnail" download>Download<span></span> </a>
+  </div>
+  <div class="image">
+    <h1>dya idea</h1>
+    <img src="{% static '/images/dya1.jpg' %}"class="img-thumbnail">
+    <div class="desc">"The light of the setting sun suffused the clouds"</div>
+    <a href="{% static '/images/dya1.jpg' %}" class="img-thumbnail" download>Download<span></span> </a>
+  </div>
+  <div class="image">
+    <h1>outfit idea</h1>
+    <img src="{% static '/images/outfit3.jpg' %}"class="img-thumbnail">
+    <div class="desc">"Try talking to that outfit After that's been in the news"</div>
+    <a href="{% static '/images/outfit3.jpg' %}" class="img-thumbnail" download>Download<span></span> </a>
+  </div>
+  <div class="image">
+    <h1>dya idea</h1>
+    <img src="{% static '/images/dya2.jpg' %}"class="img-thumbnail" >
+    <div class="desc">"The light which puts out our eyes is darkness to us"</div>
+    <a href="{% static '/images/dya2.jpg' %}" class="img-thumbnail" download>Download<span></span> </a>
+  </div>
+  <div class="image">
+    <h1>outfit idea</h1>
+    <img src="{% static '/images/outfit1.jpg' %}"class="img-thumbnail">
+    <div class="desc">"First St Louis, and then other towns on the Missouri river in succession westward, as they were settled and became available as depots, served as the outfit points for the Indian trade up the Missouri and the trade with Mexico through Santa Fe"</div>
+    <a href="{% static '/images/outfit1.jpg' %}"class="img-thumbnail" download>Download<span></span> </a>
+  </div>
+  <div class="image">
+    <h1>Home decoration </h1>
+    <img src="{% static '/images/home20.jpg' %}"class="img-thumbnail">
+    <div class="desc">"Have nothing in your home that you don't know to be useful or believe to be beautiful" </div>
+    <a href="{% static '/images/home20.jpg' %}" class="img-thumbnail"download>Download<span></span> </a>
+  </div>
+  <div class="image"></div>
+    <h1>chai idea</h1>
+    <img src="{% static '/images/tea3.jpg' %}"class="img-thumbnail">
+    <div class="desc">"Insert the cookie into cupcake frosting that's been dipped in crushed cookies like the wormy cupcakes"</div>
+    <a href="{% static '/images/tea3.jpg' %}"class="img-thumbnail" download>Download<span></span> </a>
+    
+  </div>
+ {% endblock %}
+</body> 
+</html>         
+          

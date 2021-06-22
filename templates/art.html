@@ -1,0 +1,40 @@
+{% load static %}
+{% static "images" as baseUrl %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Image</title>
+    
+    <!-- <link rel="stylesheet" type="text/css" href="{% static  '/styles/art.css' %}">  -->
+   
+    
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 200px;
+        background-image:url("{% static 'images/down4.jpg' %}");
+        font-size: xx-large;
+        font-style: italic;
+        color:maroon;
+        font-weight: bolder ;
+    }
+</style>
+<body>
+    
+<center>
+ <form method="POST"   enctype="multipart/form-data">
+{% csrf_token %}
+<h2>Upload Your Picture</h2>
+
+{{form.as_p}}
+<button type="submit">UPLOAD</button>
+
+</form>
+</center>
+
+
+</body>

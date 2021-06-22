@@ -1,0 +1,100 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {margin:0;
+          background-color:thistle; }
+        
+        .topnav {
+          overflow: hidden;
+          background-color:thistle;
+        }
+        
+        .topnav a {
+          float: right;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration:none;
+          font-size: 22px;
+          font-style:normal;
+          border-bottom: 3px solid transparent;
+          font-weight: bolder;
+        }
+        
+        .topnav a:hover {
+          border-bottom: 3px solid red;
+        }
+        
+        .topnav a.active {
+          border-bottom: 3px solid red;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="topnav">
+          <a href=""> careers</a>
+          <a class ="active" href="gift"> Sign up!</a>
+          <a href="#contact">Save</a>
+          <a href="abouted">Discover</a>
+          <a class ="active" href="youtube">What is pinterest?</a>
+         
+        </div>
+      
+          {% for x in you %} 
+              <img src="{{x.img.url}}" height="50px" width="auto" >
+              {% comment %}<h1>About Pinterest</h1>{% endcomment %}
+          {% endfor %}
+              
+              </div>
+             
+              <center>
+                <!-- <img src="{% static '/images/about.png' %}" height="400px" width="2000px"  > -->
+                <img src="{% static '/images/pack.jpg' %}" height="500px" width="1300px"  >
+                
+                   <h1>What's new at Pinterest</h1>
+                  
+                   <img class="active"src="{% static '/images/spark.jpg' %}" height="100px" width="auto"><h3>The Pinterest spark</h3><p>Watch them go first date to new digs</p>
+                   <img class="active"src="{% static '/images/small.jpg' %}" height="100px" width="auto"><h3>Meet Lens</h3><p>Point.Tap.Discover ideas!</p>
+                   <img class="active"src="{% static '/images/web.jpg'  %}" height="100px" width="auto"><h3>Shopping with Pinterest</h3><p>Another way to bring ideas to life</p>
+                  </center>
+                  <img src="{% static '/images/pin.jpg' %}" height="40px" width="auto" >
+                  <center>
+                  
+                    <link rel="stylesheet" type="text/css" href="{% static  '/styles/about.css' %}"> 
+                    <label for="ice-cream-choice">Choose a Language:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+    <option value="English">
+    <option value="English UK">
+    <option value="Dansk">
+    <option value="Cesky">
+    <option value="Hindi">
+    <option value="Suomi">
+    <option value="Romana">
+    <option value="Svenska">
+    <option value="Tagalog"></option>
+  </option>
+</datalist>
+</center>
+<h3>About Us</h3>
+  <p href="#"> what is pinterest?</p>
+  <p href="#">Our pinterest logo</p>
+  <p href="#contact">Engineering blog</p>
+  <p href="#">Brand guidelines</p>
+  <p class ="active" href="#">Careers</p>
+  </body>
+  </html>
+
+                
+                  
+        
