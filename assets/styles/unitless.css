@@ -1,0 +1,52 @@
+  body{
+    margin: 0;
+    padding: 0;
+    background:white;
+}
+h1{
+    margin:auto;
+    padding: 0;
+    font-family:  arial;
+    font-size:xx-large;
+}
+span:before
+{
+    
+    content: 'home decoration idea';
+    animation: animate infinite 8s;
+}
+@keyframes animate
+{
+    
+    25%
+    {
+     content: 'chai time snacks idea';
+    }
+    50%
+    {
+     content: 'outfit idea';
+    }
+    75%
+    {
+     content: 'DIY idea';
+    }
+    
+}   
+
+    
+ /* #slideset1 { position: relative}
+  
+#slideset1 > * {visibility: hidden; position: absolute;
+     animation: 8s autoplay1 infinite}
+   
+     @keyframes autoplay1 {
+        0% {visibility: visible}
+        33.33% {visibility: hidden}
+      }
+      #slideset1 > *:nth-child(1) {animation-delay: 0s}
+#slideset1 > *:nth-child(2) {animation-delay: 4s}
+#slideset1 > *:nth-child(3) {animation-delay: 8s}  
+
+   
+   
+   */
